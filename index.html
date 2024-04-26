@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notizblock Test 5</title>
+    <link rel="icon" type="image/vnd.icon" href="img/notiz.ico" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+  <body onload="render()">
+    <header>
+      <h1 class="hide-mobil">Notiz - Anwendung</h1>
+
+      <nav>
+        <a class="hide-mobil" href="#">Aktualisieren</a>
+        <a class="hide-mobil" href="#">Suchen</a>
+        <a class="hide-mobil" href="#">Einstellung</a>
+        <img onclick="showMenu()" class="menu" src="img/icons8-trash.svg" />
+      </nav>
+    </header>
+
+    <div class="borderline"></div>
+
+    <div class="atf">
+      <div id="content"></div>
+
+      <div id="menu" class="overlay-menu">
+        <h3>gelöschte Einträge</h3>
+
+        <button onclick="closeMenu()" class="menuButton">Schießen</button>
+
+        <div id="trashCanContainer">
+          <div id="waste"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
